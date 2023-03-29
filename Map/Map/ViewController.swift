@@ -110,6 +110,9 @@ class ViewController: UIViewController {
         let coordinateRegion = MKCoordinateRegion(center: startLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
+    /* Немного не понял что делать со второй кнопкой?  В задании было написано: "режим", я сделал приближения к выбранной точке на карте, если она есть.
+       Можно сделать любые другие действия, допустим прописать маршрут по нескольким точкам и выделять маркером, либо другие экшены...*/
+    
     @objc func actionMap() {
         guard let pin = pin else { return }
         let regionRadius: CLLocationDistance = 100
